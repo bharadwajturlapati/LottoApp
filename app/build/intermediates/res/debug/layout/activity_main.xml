@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@drawable/backgroundhome"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch a Ticket "
+        android:id="@+id/button"
+        android:src="@drawable/fetchaticket"
+        android:onClick="ticketGenerator"
+        android:layout_marginTop="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game  Board "
+        android:id="@+id/button2"
+        android:src="@drawable/gameboard"
+        android:onClick="gameBoardGenerator"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket book"
+        android:id="@+id/button3"
+        android:src="@drawable/ticketbook"
+        android:onClick="ticketBookGenerator"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_below="@+id/button3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Already Started a game ? Fill the table here "
+            android:id="@+id/textView" />
+        <View
+            android:id="@+id/View01"
+            android:layout_width="500dip"
+            android:layout_height="2dip"
+            android:background="#2B497B"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText" />
+        <View
+            android:id="@+id/View02"
+            android:layout_width="500dip"
+            android:layout_height="2dip"
+            android:background="#2B497B"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert into the table "
+            android:id="@+id/fillTable" />
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/bharadwaj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml -->
