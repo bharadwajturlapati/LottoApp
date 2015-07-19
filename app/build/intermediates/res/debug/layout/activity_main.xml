@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Already Started a game ? Fill the table here "
+            android:text="Already Started a game ? Fill the table here (Ex:21,32,45,65)"
             android:id="@+id/textView" />
         <View
             android:id="@+id/View01"
